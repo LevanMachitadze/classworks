@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -8,26 +9,32 @@ export default function Home() {
           Welcome To Relax Room
         </h1>
         <div className='flex items-center justify-center space-x-4'>
-          <button className='px-8 py-6 mx-4 bg-transparent border border-white text-xs text-white uppercase transition duration-20 hover:bg-white hover:text-black'>
+          <Link
+            href='/aboutus'
+            className='px-8 py-6 mx-4 bg-transparent border border-white text-xs text-white uppercase transition duration-20 hover:bg-white hover:text-black'
+          >
             About Us
-          </button>
-          <button className='px-8 py-6 mx-4 bg-transparent border border-white text-xs text-white uppercase transition duration-20 hover:bg-white hover:text-black'>
+          </Link>
+          <Link
+            href='/services'
+            className='px-8 py-6 mx-4 bg-transparent border border-white text-xs text-white uppercase transition duration-20 hover:bg-white hover:text-black'
+          >
             Services
-          </button>
-          <button className='px-8 py-6 mx-4 bg-transparent border border-white text-xs text-white uppercase transition duration-20 hover:bg-white hover:text-black'>
+          </Link>
+          <Link
+            href='/contact'
+            className='px-8 py-6 mx-4 bg-transparent border border-white text-xs text-white uppercase transition duration-20 hover:bg-white hover:text-black'
+          >
             Contact
-          </button>
-          <button className='px-8 py-6 mx-4 bg-transparent border border-white text-xs text-white uppercase transition duration-20 hover:bg-white hover:text-black'>
+          </Link>
+          <Link
+            href='/galerry'
+            className='px-8 py-6 mx-4 bg-transparent border border-white text-xs text-white uppercase transition duration-20 hover:bg-white hover:text-black'
+          >
             Galerry
-          </button>
+          </Link>
         </div>
       </div>
-      <video
-        src='/video.mp4'
-        autoPlay
-        loop
-        className='absolute -z-10 h-full w-full object-cover inset-0'
-      />
     </main>
   );
 }
