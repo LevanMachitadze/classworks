@@ -1,6 +1,7 @@
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import VideoBackground from './components/VideoBackground';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -28,15 +29,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <VideoBackground />
         {children}
-        <video
-          src='/video.mp4'
-          autoPlay
-          loop
-          muted
-          playsInline
-          className='absolute -z-10 h-full w-full object-cover inset-0'
-        />
       </body>
     </html>
   );

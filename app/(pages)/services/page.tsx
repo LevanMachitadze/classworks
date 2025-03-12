@@ -1,105 +1,75 @@
 'use client';
 
 import React from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Services() {
+  const router = useRouter();
+
   return (
-    <>
-      <div className='flex flex-col items-center justify-center h-screen p-24 text-white'>
-        <div className='flex flex-col items-center justify-center h-screen p-24 text-white'>
-          <h2 className='text-white font-bold text-[50px]  border border-dashed rounded-[50px] cursor-pointer  border-white px-3 py-2'>
-            სერვისები
-          </h2>
-        </div>
-        <table className='min-w-full border border-gray-300'>
+    <div className='relative flex flex-col items-center justify-center min-h-screen p-6 text-white'>
+      <button
+        onClick={() => router.push('/')}
+        className='absolute top-5 left-5 bg-white/20 hover:bg-white/40 transition text-white px-4 py-2 rounded-lg backdrop-blur-md'
+      >
+        ⬅ უკან
+      </button>
+
+      <h2 className='text-white font-bold text-4xl md:text-5xl border border-dashed rounded-full px-6 py-3 mb-8 backdrop-blur-md bg-white/10 hover:shadow-lg cursor-pointer transition'>
+        სერვისები
+      </h2>
+
+      <div className='w-full max-w-4xl overflow-x-auto rounded-xl bg-white/10 backdrop-blur-lg shadow-lg p-6'>
+        <table className='w-full border border-gray-500 text-center'>
           <thead>
-            <tr>
-              <th className='border border-gray-300 p-2'>მასაჟის დასახელება</th>
-              <th className='border border-gray-300 p-2'>
+            <tr className='bg-white/20 text-lg'>
+              <th className='border border-gray-400 p-3'>მასაჟის დასახელება</th>
+              <th className='border border-gray-400 p-3'>
                 პროცედურის რაოდენობა
               </th>
-              <th className='border border-gray-300 p-2'>
-                ხანგრძ₾ივობა(საათი)
+              <th className='border border-gray-400 p-3'>
+                ხანგრძლივობა (საათი)
               </th>
-              <th className='border border-gray-300 p-2'>ფასი</th>
+              <th className='border border-gray-400 p-3'>ფასი</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td className='border border-gray-300 p-2'>
-                სარელაქსაციო მასაჟი
-              </td>
-              <td className='border border-gray-300 p-2'>1</td>
-              <td className='border border-gray-300 p-2'>1</td>
-              <td className='border border-gray-300 p-2'>30</td>
-            </tr>
-            <tr>
-              <td className='border border-gray-300 p-2'>
-                სპორტულ გამაჯანსაღებელი
-              </td>
-              <td className='border border-gray-300 p-2'>1</td>
-              <td className='border border-gray-300 p-2'>1</td>
-              <td className='border border-gray-300 p-2'>35</td>
-            </tr>
-            <tr>
-              <td className='border border-gray-300 p-2'>
-                ანტიცელულიტური მასაჟი (ორივე ზონა პლიუს მუცელი){' '}
-              </td>
-              <td className='border border-gray-300 p-2'>1</td>
-              <td className='border border-gray-300 p-2'>1</td>
-              <td className='border border-gray-300 p-2'>35</td>
-            </tr>
-            <tr>
-              <td className='border border-gray-300 p-2'>
-                სამკურნალო მასაჟი(სკოლიოზი,ოსტექონდროზი, პლიუს ვარჯიშები)
-              </td>
-              <td className='border border-gray-300 p-2'>1</td>
-              <td className='border border-gray-300 p-2'>1</td>
-              <td className='border border-gray-300 p-2'>40</td>
-            </tr>
-            <tr>
-              <td className='border border-gray-300 p-2 border-b-red-500'>
-                სარეაბილიტაციო მასაჟი
-              </td>
-              <td className='border border-gray-300 p-2 border-b-red-500'>1</td>
-              <td className='border border-gray-300 p-2 border-b-red-500'>1</td>
-              <td className='border border-gray-300 p-2 border-b-red-500'>
-                40
-              </td>
-            </tr>
-            <tr>
-              <td className='border border-red-500 p-2 '>
-                ანტიცელულიტური მასაჟი{' '}
-              </td>
-              <td className='border border-red-500 p-2'>12</td>
-              <td className='border border-red-500 p-2'>1</td>
-              <td className='border border-red-500 p-2'>400</td>
-            </tr>
-            <tr>
-              <td className='border border-red-500 p-2'>სარელაქსაციო მასაჟი</td>
-              <td className='border border-red-500 p-2'>12</td>
-              <td className='border border-red-500 p-2'>1</td>
-              <td className='border border-red-500 p-2'>330</td>
-            </tr>
-            <tr>
-              <td className='border border-red-500 p-2'>
-                სპორტულ გამაჯანსაღებელი მასაჟი
-              </td>
-              <td className='border border-red-500 p-2'>12</td>
-              <td className='border border-red-500 p-2'>1</td>
-              <td className='border border-red-500 p-2'>400</td>
-            </tr>
-            <tr>
-              <td className='border border-red-500 p-2'>
-                სამკურნალო მასაჟი(სკოლიოზი,ოსტექონდროზი, პლიუს ვარჯიშები)
-              </td>
-              <td className='border border-red-500 p-2'>12</td>
-              <td className='border border-red-500 p-2'>1</td>
-              <td className='border border-red-500 p-2'>450</td>
-            </tr>
+          <tbody className='text-base'>
+            {[
+              ['სარელაქსაციო მასაჟი', 1, 1, 30],
+              ['სპორტულ გამაჯანსაღებელი', 1, 1, 35],
+              ['ანტიცელულიტური მასაჟი (ორივე ზონა პლიუს მუცელი)', 1, 1, 35],
+              [
+                'სამკურნალო მასაჟი (სკოლიოზი, ოსტეოქონდროზი, პლიუს ვარჯიშები)',
+                1,
+                1,
+                40,
+              ],
+              ['სარეაბილიტაციო მასაჟი', 1, 1, 40],
+              ['ანტიცელულიტური მასაჟი', 12, 1, 400],
+              ['სარელაქსაციო მასაჟი', 12, 1, 330],
+              ['სპორტულ გამაჯანსაღებელი მასაჟი', 12, 1, 400],
+              [
+                'სამკურნალო მასაჟი (სკოლიოზი, ოსტეოქონდროზი, პლიუს ვარჯიშები)',
+                12,
+                1,
+                450,
+              ],
+            ].map(([name, sessions, duration, price], idx) => (
+              <tr
+                key={idx}
+                className={`border border-gray-400 hover:bg-white/20 transition hover:shadow-md ${
+                  idx % 2 === 0 ? 'bg-white/10' : 'bg-white/5'
+                }`}
+              >
+                <td className='border border-gray-400 p-3'>{name}</td>
+                <td className='border border-gray-400 p-3'>{sessions}</td>
+                <td className='border border-gray-400 p-3'>{duration}</td>
+                <td className='border border-gray-400 p-3'>{price}₾</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
 }
