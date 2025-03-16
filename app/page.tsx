@@ -24,6 +24,12 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <footer className='absolute bottom-0 w-full p-4 bg-black bg-opacity-50'>
+        <p className='text-center text-white'>
+          © 2021 Relax Room. All rights reserved.
+        </p>
+        <p className='text-center text-white'>Created By NOMA Group</p>
+      </footer>
     </main>
   );
 }

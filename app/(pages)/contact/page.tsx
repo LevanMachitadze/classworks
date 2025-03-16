@@ -16,24 +16,24 @@ export default function Contact() {
       </button>
 
       <div className='bg-white/10 backdrop-blur-md p-10 rounded-2xl shadow-2xl text-white text-center max-w-xl w-full space-y-8 flex flex-col items-center'>
-        <h1 className='text-4xl font-bold tracking-wide'>Contact Us</h1>
+        <h1 className='text-4xl font-bold tracking-wide'>კონტაქტი</h1>
 
         <div className='space-y-5 text-lg w-full'>
           <div className='flex items-center gap-4 justify-center'>
             <Mail className='w-7 h-7 text-white' />
             <a
-              href='mailto:relaxroom@gmail.com'
+              href='mailto:ratimumladze19900930@gmail.com'
               target='_blank'
               rel='noopener noreferrer'
               className='hover:underline text-xl'
             >
-              relaxroom@example.com
+              ratimumladze19900930@gmail.com
             </a>
           </div>
           <div className='flex items-center gap-4 justify-center'>
             <Phone className='w-7 h-7 text-white' />
-            <a href='tel:+123456789' className='hover:underline text-xl'>
-              +599 08 40 11
+            <a href='tel:+995597956646' className='hover:underline text-xl'>
+              +597 95 66 46
             </a>
           </div>
         </div>
