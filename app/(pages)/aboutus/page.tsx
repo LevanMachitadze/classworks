@@ -1,7 +1,6 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
 
 export default function AboutUs() {
