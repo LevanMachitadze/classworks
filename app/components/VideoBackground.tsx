@@ -6,6 +6,7 @@ export default function VideoBackground() {
       src='/video.mp4'
       autoPlay
       loop
+      muted
       playsInline
       className='fixed top-0 left-0 w-full h-full object-cover -z-10'
     />

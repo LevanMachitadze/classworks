@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { Mail, Phone, Instagram, Facebook, ArrowLeft } from 'lucide-react';
+import { Mail, Phone, Instagram, Facebook } from 'lucide-react';
 
 export default function Contact() {
   const router = useRouter();

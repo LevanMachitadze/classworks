@@ -5,7 +5,7 @@ export default function Home() {
     <main className='flex flex-col items-center justify-center min-h-screen px-6'>
       <div className='text-center space-y-8'>
         <h1 className='uppercase text-white tracking-widest font-semibold text-3xl md:text-5xl drop-shadow-lg'>
-          მოგესალმებით "Relax Room"-ში
+          მოგესალმებით Relax Room-ში
         </h1>
 
         <div className='flex flex-wrap items-center justify-center gap-6'>
