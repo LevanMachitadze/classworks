@@ -28,7 +28,7 @@ export default function Home() {
         <p className='text-center text-white'>
           © 2021 Relax Room. All rights reserved.
         </p>
-        <p className='text-center text-white'>Created By NOMA Group</p>
+        <p className='text-center text-white'>Created By MALE Group</p>
       </footer>
     </main>
   );
