@@ -1,8 +1,8 @@
 export default {
   i18n: {
-    locales: ['ka', 'en'], // Georgian (ka) and English (en)
-    defaultLocale: 'ka', // Default language is Georgian
-    localeDetection: true, // Enable automatic locale detection based on browser language
+    locales: ['ka', 'en'],
+    defaultLocale: 'ka',
+    localeDetection: false,
   },
   reactStrictMode: true,
 };
