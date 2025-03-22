@@ -38,37 +38,70 @@ export default function Services() {
             </tr>
           </thead>
           <tbody>
-            {[
-              ['სარელაქსაციო', 1, '1სთ', '30₾'],
-              ['სპორტული', 1, '1სთ', '35₾'],
-              ['ანტიცელულიტური', 1, '1სთ', '35₾'],
-              ['სამკურნალო', 1, '1სთ', '40₾'],
-              ['სარეაბილიტაციო', 1, '1სთ', '40₾'],
-              ['ანტიცელულიტური', 12, '1სთ', '400₾'],
-              ['სარელაქსაციო', 12, '1სთ', '330₾'],
-              ['სპორტული', 12, '1სთ', '400₾'],
-              ['სამკურნალო', 12, '1სთ', '450₾'],
-            ].map(([name, sessions, duration, price], idx) => (
-              <tr
-                key={idx}
-                className={`border border-gray-400 hover:bg-white/20 transition hover:shadow-md ${
-                  idx % 2 === 0 ? 'bg-white/10' : 'bg-white/5'
-                }`}
-              >
-                <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
-                  {name}
-                </td>
-                <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>
-                  {sessions}
-                </td>
-                <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>
-                  {duration}
-                </td>
-                <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>
-                  {price}
-                </td>
-              </tr>
-            ))}
+            <tr className='border border-gray-400 bg-white/10 hover:bg-white/20 transition hover:shadow-md'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+                სარელაქსაციო
+              </td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1სთ</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>30₾</td>
+            </tr>
+            <tr className='border border-gray-400 bg-white/5 hover:bg-white/20 transition hover:shadow-md'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+                სპორტული
+              </td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1სთ</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>35₾</td>
+            </tr>
+            <tr className='border border-gray-400 bg-white/10 hover:bg-white/20 transition hover:shadow-md'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+                ანტიცელულიტური
+              </td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1სთ</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>35₾</td>
+            </tr>
+            <tr className='border border-gray-400 bg-white/5 hover:bg-white/20 transition hover:shadow-md'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+                სამკურნალო
+              </td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1სთ</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>40₾</td>
+            </tr>
+            <tr className='border border-gray-400 bg-white/10 hover:bg-white/20 transition hover:shadow-md'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+                სარეაბილიტაციო
+              </td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1სთ</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>40₾</td>
+            </tr>
+            <tr className='border border-gray-400 bg-white/5 hover:bg-white/20 transition hover:shadow-md'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+                ანტიცელულიტური
+              </td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>12</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1სთ</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>400₾</td>
+            </tr>
+            <tr className='border border-gray-400 bg-white/10 hover:bg-white/20 transition hover:shadow-md'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+                სარელაქსაციო
+              </td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>12</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1სთ</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>330₾</td>
+            </tr>
+            <tr className='border border-gray-400 bg-white/5 hover:bg-white/20 transition hover:shadow-md'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+                სპორტული
+              </td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>12</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1სთ</td>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>400₾</td>
+            </tr>
           </tbody>
         </table>
       </div>
