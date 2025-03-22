@@ -14,13 +14,16 @@ const geistMono = localFont({
   weight: '100 900',
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Relax Room',
   description: 'Massage and Relaxation',
   openGraph: {
     title: 'Relax Room',
     description: 'Massage and Relaxation',
     siteName: 'Relaxroom.space',
+  },
+  icons: {
+    icon: './favicon.ico',
   },
 };
 
