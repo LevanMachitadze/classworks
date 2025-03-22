@@ -39,7 +39,7 @@ export default function Services() {
           </thead>
           <tbody>
             <tr className='border border-gray-400 bg-white/10 hover:bg-white/20 transition hover:shadow-md'>
-              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 whitespace-normal'>
                 სარელაქსაციო
               </td>
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1</td>
@@ -47,7 +47,7 @@ export default function Services() {
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>30₾</td>
             </tr>
             <tr className='border border-gray-400 bg-white/5 hover:bg-white/20 transition hover:shadow-md'>
-              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 whitespace-normal'>
                 სპორტული
               </td>
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1</td>
@@ -55,7 +55,7 @@ export default function Services() {
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>35₾</td>
             </tr>
             <tr className='border border-gray-400 bg-white/10 hover:bg-white/20 transition hover:shadow-md'>
-              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 whitespace-normal'>
                 ანტიცელულიტური
               </td>
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1</td>
@@ -63,7 +63,7 @@ export default function Services() {
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>35₾</td>
             </tr>
             <tr className='border border-gray-400 bg-white/5 hover:bg-white/20 transition hover:shadow-md'>
-              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 whitespace-normal'>
                 სამკურნალო
               </td>
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1</td>
@@ -71,7 +71,7 @@ export default function Services() {
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>40₾</td>
             </tr>
             <tr className='border border-gray-400 bg-white/10 hover:bg-white/20 transition hover:shadow-md'>
-              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 whitespace-normal'>
                 სარეაბილიტაციო
               </td>
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>1</td>
@@ -79,7 +79,7 @@ export default function Services() {
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>40₾</td>
             </tr>
             <tr className='border border-gray-400 bg-white/5 hover:bg-white/20 transition hover:shadow-md'>
-              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 whitespace-normal'>
                 ანტიცელულიტური
               </td>
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>12</td>
@@ -87,7 +87,7 @@ export default function Services() {
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>400₾</td>
             </tr>
             <tr className='border border-gray-400 bg-white/10 hover:bg-white/20 transition hover:shadow-md'>
-              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 whitespace-normal'>
                 სარელაქსაციო
               </td>
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>12</td>
@@ -95,7 +95,7 @@ export default function Services() {
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>330₾</td>
             </tr>
             <tr className='border border-gray-400 bg-white/5 hover:bg-white/20 transition hover:shadow-md'>
-              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 text-left whitespace-normal'>
+              <td className='border border-gray-400 p-1 sm:p-2 md:p-3 whitespace-normal'>
                 სპორტული
               </td>
               <td className='border border-gray-400 p-1 sm:p-2 md:p-3'>12</td>
