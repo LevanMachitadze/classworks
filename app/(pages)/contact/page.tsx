@@ -14,7 +14,6 @@ export default function Contact() {
       >
         ⬅ უკან
       </button>
-      ={' '}
       <div className='bg-white/10 backdrop-blur-md p-6 sm:p-10 rounded-2xl shadow-2xl text-white text-center max-w-lg w-full space-y-6 sm:space-y-8 flex flex-col items-center'>
         <h1 className='text-3xl sm:text-4xl font-bold tracking-wide'>
           კონტაქტი
