@@ -19,13 +19,12 @@ export default function Services() {
         სერვისები
       </h2>
 
-      {/* Responsive Table */}
       <div className='w-full max-w-md sm:max-w-3xl overflow-x-auto rounded-lg bg-white/10 backdrop-blur-lg shadow-md p-3 sm:p-4 md:p-6'>
         <table className='w-full text-xs sm:text-sm md:text-base border border-gray-500 text-center'>
           <thead>
             <tr className='bg-white/20'>
               <th className='border border-gray-400 p-1 sm:p-2 md:p-3 w-[50%]'>
-                დასახელება
+                მასაჟის დასახელება
               </th>
               <th className='border border-gray-400 p-1 sm:p-2 md:p-3 w-[15%]'>
                 პროც.
